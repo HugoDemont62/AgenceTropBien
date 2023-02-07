@@ -550,8 +550,8 @@ a {
 }
 @media screen and (max-width: 544px) {
   .presentation__card {
-    height: 325px;
-    width: 325px;
+    height: 375px;
+    width: 100%;
   }
 }
 .presentation__card:hover img {
