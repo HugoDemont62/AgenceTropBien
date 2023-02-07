@@ -1,0 +1,52 @@
+.contact
+  width: 100%
+  &__title img
+    width: 50px
+  &__title
+    margin-left: 15%
+    margin-bottom: 8%
+    color: $primary
+    margin-top: 10%
+    font-weight: 100
+    font-size: 3rem
+  &__flex
+    display: flex
+    justify-content: space-evenly
+    @include md
+      flex-direction: column
+  &__left
+    width: 100%
+  &__right
+    width: 100%
+
+.left
+  &__info
+    margin: 35px
+  &__img
+    width: 15px
+  &__para
+    margin-left: 28%
+    text-align: start
+    text-transform: uppercase
+    color: $primary
+    font-weight: 500
+    letter-spacing: 3px
+    @include md
+      margin-left: 0
+      text-align: center
+
+.right
+  @include md
+    text-align: center
+  &__input
+    color: $primary
+    border: none
+    margin: 15px
+    padding-block: 10px
+    padding-bottom: 20px
+    border-bottom: 2px solid $primary
+    width: 30%
+    &::placeholder
+      color: $primary
+  &__textarea
+    width: 65%

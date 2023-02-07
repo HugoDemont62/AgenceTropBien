@@ -1,0 +1,52 @@
+.articles
+  max-width: 1200px
+  padding-block: 4rem
+  display: flex
+  flex-direction: column
+  justify-content: center
+  & .article
+    padding-block: 2rem
+    display: flex
+    flex-direction: row
+    @include md
+      flex-direction: column
+    &__informations
+      position: relative
+      padding: 1rem
+      text-align: start
+      & .para
+        display: flex
+        flex-direction: column
+        font-family: Roboto, sans-serif
+        color: black
+        & b
+          padding-block: 1rem
+      & .title
+        display: flex
+        justify-content: center
+        align-items: center
+        color: #ff0068
+        & h1
+          font-family: Inter, sans-serif
+          font-weight: lighter
+          font-size: 2.8rem
+  & #reverse
+    display: flex
+    flex-direction: row-reverse
+    @include md
+      flex-direction: column
+    & .article__informations
+      text-align: end
+.quotes
+  position: absolute
+  left: -50px
+  margin-bottom: 4rem
+  height: 2.5rem
+  @include xlg
+    display: none
+
+.cta
+  background: #ff0068
+  color: white
+  padding-inline: 1rem
+  border-radius: 10px

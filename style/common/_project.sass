@@ -1,0 +1,49 @@
+.project
+  margin: 0 auto
+  &__title
+    color: $primary
+    text-align: center
+    font-size: 2.5rem
+    font-weight: 100
+  &__para
+    text-align: center
+    font-size: 1.5rem
+    color: $black
+
+.presentation
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  &__card
+    position: relative
+    height: 600px
+    width: 375px
+    margin: 10px
+    overflow: hidden
+    @include md
+      height: 375px
+  &__img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &__title
+    width: 100%
+    position: absolute
+    color: white
+    top: 26.8%
+    @include md
+      margin: 20%
+
+    transform: rotate(-90deg)
+    font-weight: 100
+    letter-spacing: 4px
+    text-transform: uppercase
+    text-align: end
+  &__para
+    position: absolute
+    bottom: 0
+    left: 8%
+    color: white
+    margin-right: 160px
+
