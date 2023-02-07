@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import "common/header.css";
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -333,12 +334,6 @@ a {
   text-decoration: none;
 }
 
-header {
-  padding: 1rem;
-  height: auto;
-  width: 200px;
-}
-
 /*Hero Start*/
 .hero {
   display: grid;
@@ -464,6 +459,7 @@ header {
   flex-direction: column;
   font-family: Roboto, sans-serif;
   color: black;
+  margin-bottom: 5%;
 }
 .articles .article__informations .para b {
   padding-block: 1rem;
@@ -502,13 +498,6 @@ header {
   .quotes {
     display: none;
   }
-}
-
-.cta {
-  background: #ff0068;
-  color: white;
-  padding-inline: 1rem;
-  border-radius: 10px;
 }
 
 .project {
@@ -670,10 +659,13 @@ footer p {
   transform: translate(-50%, 50%);
 }
 
-@media (max-width: 640px) {
-  .projet {
-    display: none;
-  }
+.cta {
+  background-color: #ff0068;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  padding: 10px;
+  padding-inline: 25px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
