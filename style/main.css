@@ -451,7 +451,7 @@ a {
 }
 @media screen and (max-width: 990px) {
   .articles .article {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .articles .article__informations {
@@ -486,7 +486,7 @@ a {
 }
 @media screen and (max-width: 990px) {
   .articles #reverse {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .articles #reverse .article__informations {
