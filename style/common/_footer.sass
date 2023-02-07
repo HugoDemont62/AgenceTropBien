@@ -12,6 +12,10 @@ footer
     left: 50%
     top: 50%
     transform: translate(-50%,-50%)
+    @include md
+      width: 55%
+    @include xs
+      width: 75%
   & p
     color: white
     font-family: "Roboto", sans-serif
@@ -21,3 +25,6 @@ footer
     left: 54%
     top: 68%
     transform: translate(-50%,50%)
+    width: max-content
+    @include xs
+      font-size: 0.8rem

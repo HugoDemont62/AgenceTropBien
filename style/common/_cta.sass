@@ -2,14 +2,20 @@
   background-color: $primary
   color: white
   font-family: $font-heading
-  padding: 5px
+  padding: 10px
   padding-inline: 25px
   font-size: 1.5rem
-  transition: .1s
+  transition: 0.2s
+  &__form
+    position: absolute
+    right: 33%
+    @include md
+      position: initial
 
   &:hover
     color: #ff0068
     background: #ffffff
-    transition: .1s
+    transition: 0.2s
+    border: 1px solid $primary
   @include lg
     font-size: 1rem

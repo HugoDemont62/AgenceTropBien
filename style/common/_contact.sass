@@ -6,9 +6,15 @@
     margin-left: 15%
     margin-bottom: 8%
     color: $primary
-    margin-top: 10%
+    margin-top: 30%
     font-weight: 100
     font-size: 3rem
+    @include xlg
+      margin-top: 10%
+    @include xs
+      font-size: 2rem
+      margin-left: 0
+      text-align: center
   &__flex
     display: flex
     justify-content: space-evenly
@@ -36,6 +42,7 @@
       text-align: center
 
 .right
+  position: relative
   @include md
     text-align: center
   &__input
@@ -50,3 +57,30 @@
       color: $primary
   &__textarea
     width: 65%
+
+.convaincu
+  margin-top: 8%
+  position: absolute
+  left: 15%
+  width: 250px
+  height: 18vw
+  border-left: 1px solid $primary
+  @include xlg
+    display: none
+  &__title
+    color: $primary
+    font-family: $font-heading
+    font-weight: 100
+    padding-left: 25px
+    text-transform: uppercase
+    font-size: 1.6rem
+  &__carre
+    position: absolute
+    background-color: $primary
+    height: 10px
+    width: 10px
+  &__carre1
+    left: -2%
+  &__carre2
+    left: -2%
+    bottom: 0
