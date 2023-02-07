@@ -439,6 +439,11 @@ a {
   flex-direction: column;
   justify-content: center;
 }
+@media screen and (max-width: 990px) {
+  .articles {
+    max-width: 500px;
+  }
+}
 .articles .article {
   padding-block: 2rem;
   display: flex;
@@ -486,6 +491,11 @@ a {
 }
 .articles #reverse .article__informations {
   text-align: end;
+}
+@media screen and (max-width: 990px) {
+  .articles #reverse .article__informations {
+    text-align: start;
+  }
 }
 
 .quotes {

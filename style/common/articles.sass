@@ -4,6 +4,8 @@
   display: flex
   flex-direction: column
   justify-content: center
+  @include md
+    max-width: 500px
   & .article
     padding-block: 2rem
     display: flex
@@ -38,6 +40,8 @@
       flex-direction: column
     & .article__informations
       text-align: end
+      @include md
+        text-align: start
 .quotes
   position: absolute
   left: -50px
