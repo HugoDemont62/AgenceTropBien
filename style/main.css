@@ -513,6 +513,11 @@ a {
 .project {
   margin: 0 auto;
 }
+@media screen and (max-width: 990px) {
+  .project {
+    max-width: 500px;
+  }
+}
 .project__title {
   color: #ff0068;
   text-align: center;
@@ -543,10 +548,21 @@ a {
     height: 375px;
   }
 }
+@media screen and (max-width: 544px) {
+  .presentation__card {
+    height: 325px;
+    width: 325px;
+  }
+}
+.presentation__card:hover img {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 .presentation__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.2s;
 }
 .presentation__title {
   width: 100%;
