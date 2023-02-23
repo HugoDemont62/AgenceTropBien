@@ -40,21 +40,40 @@
         transform: rotate(0)
 
 .infos__container
+  overflow: hidden
+  position: relative
   width: 100%
-  img
+  .background
+    background: radial-gradient(circle, rgba(243,187,16,1) 0%, rgba(249,222,48,1) 0%, rgba(243,187,16,1) 100%)
+    height: 676px
     width: 100%
     @include md
       display: none
+  img
+    position: absolute
+    right: 0
+    bottom: 0
+    animation: 2s hero ease
+    @include md
+      display: none
+
+  @keyframes hero
+    0%
+      right: -100%
+    100%
+      right: 0
+
   .texte__hero
     font-family: $font-heading
     font-weight: bold
     font-size: 5rem
     color: black
     text-transform: uppercase
-    width: 40%
+    width: 50%
     padding-inline: 5rem
     position: absolute
     top: 25%
+    animation: 2s txt
     @include xlg
       font-size: 4rem
     @include lg
@@ -63,6 +82,13 @@
       position: relative
       width: 100%
       text-align: center
+
+    @keyframes txt
+      0%
+        left: -100%
+      100%
+        left: 0
+
 
 
 
