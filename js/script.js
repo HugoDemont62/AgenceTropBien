@@ -116,3 +116,24 @@ gsap.from(".gsap__contact", {
 })
 
 
+gsap.to("#arm1", {
+    x: 0,
+    y: 100,
+    scrollTrigger: {
+        trigger: ".article",
+        start: "top 50%",
+        end: "+=500",
+        scrub: true,
+    }
+})
+
+gsap.from("#arm2", {
+    x: 0,
+    y: 100,
+    scrollTrigger: {
+        trigger: ".article",
+        start: "top 50%",
+        end: "+=500",
+        scrub: true,
+    }
+})
