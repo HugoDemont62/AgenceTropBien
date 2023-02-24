@@ -1,4 +1,5 @@
 .articles
+  position: relative
   max-width: 1100px
   padding-block: 4rem
   display: flex
@@ -9,34 +10,34 @@
   @include xs
     width: 100%
   & .article
+    margin: 4% 0
     padding-block: 2rem
     display: flex
     flex-direction: row
     @include md
       flex-direction: column-reverse
-    &__img
-      width: 50%
-      position: relative
-      @include md
-        width: 100%
-      & img
-        width: 100%
-        height: 100%
-        object-fit: cover
-        object-position: center
+    &__bar
+      width: 1px
+      height: 1121px
+      background: $primary
+      transform: rotate(70deg)
+      position: absolute
+      left: 52%
+      padding-bottom: 250px
+      @include lg
+        display: none
     &__informations
-      width: 50%
       position: relative
       padding: 1rem
       text-align: start
-      @include md
-        width: 100%
       & .para
         display: flex
         flex-direction: column
         font-family: Roboto, sans-serif
         color: black
         margin-bottom: 5%
+        font-weight: 100
+        font-size: 1.3rem
         & b
           padding-block: 1rem
       & .title
@@ -45,9 +46,10 @@
         align-items: center
         color: #ff0068
         & h1
-          font-family: Inter, sans-serif
+          margin: 0
+          font-family: $font-heading
           font-weight: lighter
-          font-size: 2.8rem
+          font-size: 2.6rem
   & #reverse
     display: flex
     flex-direction: row-reverse
@@ -57,7 +59,6 @@
       text-align: end
       @include md
         text-align: start
-
 .quotes
   position: absolute
   left: -50px
@@ -65,3 +66,7 @@
   height: 2.5rem
   @include xlg
     display: none
+
+.para
+  &__right
+    padding-right: 132px

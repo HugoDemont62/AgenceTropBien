@@ -9,6 +9,7 @@
     margin-top: 30%
     font-weight: 100
     font-size: 3rem
+    font-family: $font-heading
     @include xlg
       margin-top: 10%
     @include xs
@@ -35,7 +36,6 @@
     text-align: start
     text-transform: uppercase
     color: $primary
-    font-weight: 500
     letter-spacing: 3px
     @include md
       margin-left: 0
@@ -55,6 +55,8 @@
     width: 30%
     &::placeholder
       color: $primary
+      font-family: $font
+      letter-spacing: 3px
   &__textarea
     width: 65%
 
@@ -65,6 +67,7 @@
   width: 250px
   height: 18vw
   border-left: 1px solid $primary
+  overflow: hidden
   @include xlg
     display: none
   &__title

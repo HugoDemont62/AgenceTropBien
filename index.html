@@ -5,9 +5,19 @@
     <title>Agence Trobien</title>
     <link rel="stylesheet" href="style/main.css">
     <meta name="title" content="titre">
-    <link rel="icon" type="image/x-icon" href="./elemts/icones/logo.svg">
+    <link rel="icon" type="image/x-icon" href="/elemts/icones/logo.svg">
     <meta name="description" content="Agence trop bien">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
 </head>
 <!-- Site réalisé lors du cours de monsieur Devassine pour apprendre du CSS et JS
 
@@ -22,22 +32,23 @@
 <header>
     <div class="header">
         <div class="header__logo">
-            <img src="./elemts/icones/logo.svg" alt="logo">
+            <img src="/elemts/icones/logo.svg" alt="logo">
         </div>
     </div>
 </header>
 <section class="hero">
     <div class="hero__infos">
         <div class="hero__infos--links">
-            <a href="#"><img src="./elemts/icones/twitter.svg" alt="Logo de réseaux sociaux"></a>
-            <a href="#"><img src="./elemts/icones/instagram.svg" alt="Logo de réseaux sociaux"></a>
+            <a href="#"><img src="/elemts/icones/twitter.svg" alt="Logo de réseaux sociaux"></a>
+            <a href="#"><img src="/elemts/icones/instagram.svg" alt="Logo de réseaux sociaux"></a>
         </div>
         <div class="hero__infos--txt">
             <h3>suivez-nous</h3>
         </div>
     </div>
     <div class="infos__container">
-        <img class="infos__cont--img" src="./elemts/images/hero.jpg" alt="Hero image">
+        <div class="background"></div>
+        <img src="/elemts/images/hero-transparent.png" alt="">
         <h1 class="texte__hero">une agence qui est (trop) bien</h1>
     </div>
 </section>
@@ -46,40 +57,42 @@
 
 <section class="articles">
     <!-- Contact -->
-    <div class="article">
+    <div class="article article__gsap__left">
         <div class="article__informations">
-            <div class="title">
-                <img class="quotes" src="./elemts/icones/quotes.svg" alt="quotes">
+            <div class="title article__gsap__txt">
+                <img class="quotes" src="/elemts/icones/quotes.svg" alt="quotes">
                 <h1>L'internet, ce n'est pas simple, mais c'est fun aussi !</h1>
             </div>
-            <div class="para">
+            <div class="para article__gsap__txt">
                 <b>Vous avez envie d'avoir un site pour vendre vos bidules ? Vous avez envie de
                     communiquer sur le web comme un dieu, mais vous ne savez pas faire ? Faites-nous confiance, on est
                     super forts...</b>
                 <b>Il y a plein d'agence web, mais la nôtre elle est mieux, car elle est trobien !</b>
             </div>
-            <a href="#" class="cta">Un besoin de contact ?</a>
+            <a href="#" class="cta article__gsap__txt">Un besoin de contact ?</a>
         </div>
         <div class="article__img">
-            <img src="./elemts/images/saving.svg" alt="deux mains">
+            <img src="/elemts/images/saving.png" alt="deux mains">
         </div>
     </div>
+
+    <div class="article__bar article__gsap__right"></div>
+
     <!-- Services  (reverse)-->
-    <div class="article" id="reverse">
+    <div class="article article__gsap__right" id="reverse">
         <div class="article__informations">
-            <div class="title">
+            <div class="title article__gsap__txt">
                 <h1>Franchement... faites-nous confiance... ça ira bien !</h1>
             </div>
-            <div class="para">
-                <b>Vous avez envie d'avoir un site pour vendre vos bidules ? Vous avez envie de
-                    communiquer sur le web comme un dieu, mais vous ne savez pas faire ? Faites-nous confiance, on est
-                    super forts...</b>
-                <b>Il y a plein d'agence web, mais la nôtre elle est mieux, car elle est trobien !</b>
+            <div class="para article__gsap__txt para__left">
+                <b>Parce qu'il y a plein de gens.. qui se la racontent mais qui savent pas y faire. Nous franchement, on a du talent !
+                    Regardez notre site comment il marche trop bien ! Vous voulez pas la même chose ?</b>
+                <b>Alors ouais ça vous coutera un pognon de dingue ... On a rien sans rien comme on dit !</b>
             </div>
-            <a href="#" class="cta">C'est par ici qu'on signe !</a>
+            <a href="#" class="cta article__gsap__txt">C'est par ici qu'on signe !</a>
         </div>
         <div class="article__img">
-            <img src="./elemts/images/lights.svg" alt="deux mains">
+            <img src="/elemts/images/lights.png" alt="deux mains">
         </div>
     </div>
 </section>
@@ -90,10 +103,10 @@
 
 <section class="project">
 
-    <h1 class="project__title title">
+    <h1 class="project__title title gspa__title">
         Projets inspirants
     </h1>
-    <p class="project__para">
+    <p class="project__para gspa__title">
         Parce qu'on a une vision trop inspirante vous savez !
     </p>
 
@@ -149,14 +162,14 @@
 
     </div>
 
-    <h1 class="contact__title title">
+    <h1 class="contact__title title gsap__contact">
         <img src="./elemts/icones/quotes.svg" alt="">
-        Alors remplissez ca :)
+        Alors remplissez ça :)
     </h1>
 
     <div class="contact__flex flex">
 
-        <div class="contact__left left">
+        <div class="contact__left left gsap__contact">
 
             <div class="left__info">
                 <p class="left__para">
@@ -189,7 +202,7 @@
         </div>
 
 
-        <div class="contact__right right">
+        <div class="contact__right right gsap__contact">
 
             <input class="right__input" type="text" placeholder="NOM*">
             <input class="right__input" type="email" placeholder="EMAIL*"> <br>
@@ -222,3 +235,7 @@
 
 </footer>
 </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="/js/script.js"></script>
