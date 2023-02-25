@@ -115,7 +115,7 @@ gsap.from(".gsap__contact", {
     }
 })
 
-
+//Animation du bras
 gsap.to("#arm1", {
     x: 0,
     y: 100,
