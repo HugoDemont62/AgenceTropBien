@@ -137,3 +137,64 @@ gsap.from("#arm2", {
         scrub: true,
     }
 })
+
+
+gsap.from("#lamp1", {
+    x: 500,
+    y: -1000,
+    duration: 2,
+    scrollTrigger: {
+        trigger: "#reverse",
+        start: "top 70%",
+        end: "+=500",
+        scrub: true,
+    }
+})
+gsap.from("#lamp2", {
+    x: 500,
+    y: -1500,
+    duration: 2,
+    delay: 1,
+    scrollTrigger: {
+        trigger: "#reverse",
+        start: "top 80%",
+        end: "+=500",
+        scrub: true,
+    }
+})
+gsap.from("#lamp3", {
+    x: 0,
+    y: -2000,
+    duration: 2,
+    delay: 1.2,
+    scrollTrigger: {
+        trigger: "#reverse",
+        start: "top 60%",
+        end: "+=500",
+        scrub: true,
+    }
+})
+gsap.from("#lamp4", {
+    x: 0,
+    y: -3000,
+    duration: 2,
+    delay: 1.3,
+    scrollTrigger: {
+        trigger: "#reverse",
+        start: "top 60%",
+        end: "+=500",
+        scrub: true,
+    }
+})
+gsap.from("#lamp5", {
+    x: 0,
+    y: -4000,
+    duration: 2,
+    delay: 1.4,
+    scrollTrigger: {
+        trigger: "#reverse",
+        start: "top 60%",
+        end: "+=500",
+        scrub: true,
+    }
+})
